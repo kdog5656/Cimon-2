@@ -1,5 +1,6 @@
 package com.example.cimon_1
 
+import android.content.Intent
 import android.os.Bundle
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
@@ -9,6 +10,7 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
 import com.example.cimon_1.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -54,5 +56,37 @@ class MainActivity : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment_content_main)
         return navController.navigateUp(appBarConfiguration)
                 || super.onSupportNavigateUp()
+    }
+
+    fun onClick(view: View) {
+
+        when (view.id) {
+
+            R.id.Start_Button -> {
+                val startIntent = Intent(this, StartActivity::class.java)
+                startActivity(startIntent)
+            }
+            R.id.Leaderboard_Button -> {
+                val leaderboardIntent = Intent(this,LeaderBoardActivity::class.java)
+                startActivity(leaderboardIntent)
+            }
+            R.id.Settings_Button -> {
+                val settingsIntent = Intent(this, SettingsActivity::class.java)
+                startActivity(settingsIntent)
+
+            }
+            R.id.About_Button -> {
+                val aboutActivity = Intent(this, AboutActivity::class.java)
+                startActivity(aboutActivity)
+            }
+            R.id.Profile_Button -> {
+                val profileIntent = Intent(this, ProfileActivity::class.java)
+                startActivity(profileIntent)
+            }
+
+        }
+
+
+
     }
 }

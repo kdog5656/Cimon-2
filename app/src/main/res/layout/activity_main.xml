@@ -7,67 +7,72 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:background="@drawable/home">
-
-
-    <View
-        android:id="@+id/About"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:background="@drawable/question_mark"
-        android:onClick="Click"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.047"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.14" />
+    android:background="@drawable/homecimon">
 
     <Button
-        android:id="@+id/Leaderboard"
+        android:id="@+id/About_Button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#158BE4"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.14"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/Leaderboard_Button"
         android:layout_width="185dp"
         android:layout_height="50dp"
-        android:background="@drawable/btn_bg"
-        android:text="Leaderboard"
+        android:backgroundTint="#158BE4"
+        android:text="@string/leaderboard"
+        android:textColor="#FFFF"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.738"
+        tools:ignore="TextSizeCheck" />
+
+    <Button
+        android:id="@+id/Profile_Button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#158BE4"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.14"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/Settings_Button"
+        android:layout_width="185dp"
+        android:layout_height="51dp"
+        android:backgroundTint="#158BE4"
+        android:text="@string/settings"
+        android:textColor="#FFFF"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.731" />
-
-    <View
-        android:id="@+id/Profile"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:background="@drawable/profile_image"
-        android:onClick="Click"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.952"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.14" />
+        app:layout_constraintVertical_bias="0.845" />
 
     <Button
-        android:id="@+id/Settings"
+        android:id="@+id/Start_Button"
         android:layout_width="185dp"
         android:layout_height="50dp"
-        android:background="@drawable/btn_bg"
-        android:text="Settings"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.825" />
-
-    <Button
-        android:id="@+id/Start"
-        android:layout_width="185dp"
-        android:layout_height="50dp"
-        android:background="@drawable/btn_bg"
-        android:text="Start"
+        android:backgroundTint="#158BE4"
+        android:text="@string/start"
+        android:textColor="#FFFF"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
