@@ -53,6 +53,12 @@
             android:label="Profile Activity">
         </activity>
 
+        <!-- GamePage Activity -->
+        <activity
+            android:name=".GamePageActivity"
+            android:label="GamePage Activity">
+        </activity>
+
     </application>
 
 </manifest>
