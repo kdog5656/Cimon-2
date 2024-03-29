@@ -1,4 +1,4 @@
-package com.example.cimon-2
+package com.example.cimon_1
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -24,7 +24,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.HashMap;
 
-public class RegisterActivity extends AppCompatActivvity{
+public class RegisterActivity extends AppCompatActivity{
     private EditText username;
     private EditText name;
     private EditText email;
@@ -35,22 +35,21 @@ public class RegisterActivity extends AppCompatActivvity{
     private DatabaseReference mRootRef;
     private FirebaseAuth mAuth;
 
-    ProgressDialog pd;
+    ProgressDialog pd = new ProgressDialog(this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(Bundle savedInstanceState);
-        setContentView(R.layout.activvity_register);
+        setContentView(R.layout.activity_register);
         username= findViewById(R.id.username);
         name= findViewById(R.id.name);
         email= findViewById(R.id.email);
         password= findViewById(R.id.password);
         register= findViewById(R.id.register);
-        loginUser= findViewById(R.id.login_user)
+        loginUser= findViewById(R.id.login_user);
 
-        mRootRef= FirebaseDatabase.getInstance().getRefernce();
+        mRootRef= FirebaseDatabase.getInstance().getReference();
         mAuth= FirebaseAuth.getInstance();
-        pd= new ProgressDialog(this);
 
         loginUser.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -66,7 +65,7 @@ public class RegisterActivity extends AppCompatActivvity{
                 String txtEmail= email.getText().toString();
                 String txtPassword= password.getText().toString();
 
-                if(TextUtils.isEmpty(txtUsername)||TextUtils.isEmpty(txtName)|| TextUtils.isEmpty(txtEmail) || TextUtils.isEmptytxtPassword)){
+                if(TextUtils.isEmpty(txtUsername)||TextUtils.isEmpty(txtName)|| TextUtils.isEmpty(txtEmail) || TextUtils.isEmptyPassword)){
                     Toast.makeText(RegisterActivity.this, "Empty Credentials! try again", Toast.LENGTH_SHORT).SHOW();
                 }else if(txtPassword.length()<6{
                      Toast.makeText(registerActivity.this, "Password too short. Must be at least 6 char", Toast.LENGTH_SHORT.show();
@@ -74,7 +73,8 @@ public class RegisterActivity extends AppCompatActivvity{
                     registerUser(txtUsername, txtName, txtEmail, txtPassword);
                 }
            }
-     });
+        }
+    });
 }
 
 private void registerUser(final String username, final String name, final String email, String password){
@@ -90,7 +90,8 @@ private void registerUser(final String username, final String name, final String
               map.put("id", mAuth.getCurrentUser().getUid());
               map.put("username", username);
               map.put("bio", "");
-              map.put("imageurl", "default");
+              //pfp
+              //map.put("imageurl", "default");
 
               mRootRef.child("Users").child(mAuth.getCurrentUser().getUid()).setValue(map).addOnCompleteListener(new OnCompleteListener<Void>(){
                   @Override
@@ -103,16 +104,16 @@ private void registerUser(final String username, final String name, final String
                           intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK| Intent.FLAG_ACTIVITY_CLEAR_TOP);
                           startActivity(intent);
                         }
+                     }
                   }
-            });
-        }
+              });
+          }
     }).addOnFailureListener(new OnFailureListener(){
       @Override
       public void onFailure(@NonNull Exception e){
           pd.dismiss();
           Toast.makeText(RegisterActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
-        }
+      }
     });
-  }  
 }
 

@@ -10,9 +10,10 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven { url //jitpack.io }
     }
 }
 
 rootProject.name = "Cimon-1"
-include(":app")
+include(":app")}
  
