@@ -9,7 +9,7 @@
     android:gravity="center"
     android:background="@drawable/homecimon">
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/About_Button"
         android:layout_width="48dp"
         android:layout_height="48dp"
@@ -23,7 +23,7 @@
         app:layout_constraintVertical_bias="0.14"
         tools:ignore="SpeakableTextPresentCheck" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/Leaderboard_Button"
         android:layout_width="185dp"
         android:layout_height="50dp"
@@ -38,7 +38,7 @@
         app:layout_constraintVertical_bias="0.738"
         tools:ignore="TextSizeCheck" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/Profile_Button"
         android:layout_width="48dp"
         android:layout_height="48dp"
@@ -52,7 +52,7 @@
         app:layout_constraintVertical_bias="0.14"
         tools:ignore="SpeakableTextPresentCheck" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/Settings_Button"
         android:layout_width="185dp"
         android:layout_height="51dp"
@@ -66,7 +66,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.845" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/Start_Button"
         android:layout_width="185dp"
         android:layout_height="50dp"

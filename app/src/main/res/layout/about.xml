@@ -3,36 +3,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/cimon_colors">
+    android:background="@drawable/cimon_colors"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <TextView
         android:id="@+id/about"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_constraintHorizontal_bias="0.548"
-        android:layout_constraintVertical_bias="0.638"
-        android:layout_constraintBottom_toBottomOf="parent"
-        android:layout_constraintEnd_toEndOf="parent"
-        android:layout_constraintStart_toStartOf="parent"
-        android:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
         android:text="About"
         android:textColor="@color/white"
         android:textSize="60dp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="124dp"
-        tools:layout_editor_absoluteY="30dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
 
     <TextView
         android:layout_width="358dp"
         android:layout_height="479dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
         android:gravity="center"
-        android:layout_constraintHorizontal_bias="0.548"
-        android:layout_constraintVertical_bias="0.638"
-        android:layout_constraintBottom_toBottomOf="parent"
-        android:layout_constraintEnd_toEndOf="parent"
-        android:layout_constraintStart_toStartOf="parent"
-        android:layout_constraintTop_toTopOf="parent"
         android:text="
 Introducing Cimon, a dynamic and engaging mobile app designed to provide endless entertainment and challenge your cognitive skills. Similar to the classic game Simon Says, Cimon adds its own unique twist with five vibrant colors and two additional thrilling game modes.
 
@@ -45,6 +46,10 @@ But the excitement doesn't stop there. With Frequency Beat mode, Cimon transform
 Whether you're a casual gamer looking for some fun or a competitive player seeking a challenge, Cimon has something for everyone. Stay tuned for updates and get ready to embark on a colorful journey unlike any other."
         android:textColor="@color/white"
         android:textSize="16dp"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="102dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.386" />
 </androidx.constraintlayout.widget.ConstraintLayout>
