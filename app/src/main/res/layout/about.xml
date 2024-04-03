@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/cimon_colors"
@@ -15,9 +14,9 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:text="About"
+        android:text="@string/About"
         android:textColor="@color/white"
-        android:textSize="60dp"
+        android:textSize="60sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,18 +33,9 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:gravity="center"
-        android:text="
-Introducing Cimon, a dynamic and engaging mobile app designed to provide endless entertainment and challenge your cognitive skills. Similar to the classic game Simon Says, Cimon adds its own unique twist with five vibrant colors and two additional thrilling game modes.
-
-In the Original mode, Cimon Says, players must follow the color sequence dictated by the app, testing their memory and attention to detail. It's a classic challenge with a modern twist.
-
-For those seeking a faster-paced experience, Lightning Speed mode pushes your reflexes to the limit. Race against the clock to tap each color as quickly as possible, testing your reaction time and agility.
-
-But the excitement doesn't stop there. With Frequency Beat mode, Cimon transforms into a rhythm-based adventure where players sync their taps with the music. Each color pattern syncs dynamically with the beat, offering a fresh challenge with every playthrough.
-
-Whether you're a casual gamer looking for some fun or a competitive player seeking a challenge, Cimon has something for everyone. Stay tuned for updates and get ready to embark on a colorful journey unlike any other."
+        android:text="@string/About_Cimon"
         android:textColor="@color/white"
-        android:textSize="16dp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.476"

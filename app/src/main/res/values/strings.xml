@@ -49,4 +49,58 @@
     <string name="beat">Beat</string>
     <string name="cimon_says">Cimon Says</string>
     <string name="speed">Speed</string>
+    <string name="R">R</string>
+    <string name="Y">Y</string>
+    <string name="G">G</string>
+    <string name="B">B</string>
+    <string name="P">P</string>
+    <string name="Pause">Pause</string>
+    <string name="About">About</string>
+    <string name="Start">Start</string>
+    <string name="Leaderboard">Leaderboard</string>
+    <string name="Settings">Settings</string>
+    <string name="Game_Modes">Game Modes</string>
+    <string name="Cimon_Says">Cimon Says</string>
+    <string name="Madness">Madness</string>
+    <string name="Frequency_Beat">Frequency Beat</string>
+    <string name="Dark_Mode">Dark Mode</string>
+    <string name="Audio">Audio</string>
+    <string name="Rank">Rank</string>
+    <string name="Name">Name</string>
+    <string name="Score">Score</string>
+    <string name="Accuracy">Accuracy</string>
+    <string name="Time">Time</string>
+    <string name="Attention_Span">Attention Span</string>
+    <string name="Logout">Logout</string>
+    <string name="Profile_Name">Profile Name</string>
+    <string name="Blind_Mode">Blind Mode</string>
+    <string name="None">None</string>
+    <string name="Trianopia">Trianopia</string>
+    <string name="Deuteranopia">Deuteranopia</string>
+    <string name="Protanopia">Protanopia</string>
+    <string name="Mute">Mute</string>
+    <string name="Unmute">Unmute</string>
+    <string name="Sound_Effects">Sound Effects</string>
+    <string name="Effects">Effects</string>
+    <string name="On">On</string>
+    <string name="Off">Off</string>
+    <string name="Volume_Control">Volume Control</string>
+    <string name="About_Cimon">Introducing Cimon, a dynamic and engaging mobile app designed to provide endless entertainment and challenge your cognitive skills. Similar to the classic game Simon Says, Cimon adds its own unique twist with five vibrant colors and two additional thrilling game modes.
+
+In the Original mode, Cimon Says, players must follow the color sequence dictated by the app, testing their memory and attention to detail. It\'s a classic challenge with a modern twist.
+
+For those seeking a faster-paced experience, Lightning Speed mode pushes your reflexes to the limit. Race against the clock to tap each color as quickly as possible, testing your reaction time and agility.
+
+But the excitement doesn't stop there. With Frequency Beat mode, Cimon transforms into a rhythm-based adventure where players sync their taps with the music. Each color pattern syncs dynamically with the beat, offering a fresh challenge with every playthrough.
+
+Whether you're a casual gamer looking for some fun or a competitive player seeking a challenge, Cimon has something for everyone. Stay tuned for updates and get ready to embark on a colorful journey unlike any other.</string>
+    <int number="1">1</int>
+    <int number="2">2</int>
+    <int number="3">3</int>
+    <int number="4">4</int>
+    <int number="5">5</int>
+    <int number="6">6</int>
+    <int number="7">7</int>
+
+
 </resources>
