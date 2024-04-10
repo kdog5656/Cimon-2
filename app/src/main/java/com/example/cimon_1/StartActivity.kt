@@ -8,7 +8,7 @@ import android.view.View
 class StartActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_start)
+        setContentView(R.layout.activity_gamemode)
     }
 
     fun onClick(view: View) {
@@ -20,7 +20,7 @@ class StartActivity : Activity() {
                 val cimonsaysIntent = Intent(this, GamePageActivity::class.java)
                 startActivity(cimonsaysIntent)
             }
-            R.id.Lightning_Button -> {
+            R.id.Madness_Button -> {
 
                 val lightningIntent = Intent(this, SettingsActivity::class.java)
                 startActivity(lightningIntent)
