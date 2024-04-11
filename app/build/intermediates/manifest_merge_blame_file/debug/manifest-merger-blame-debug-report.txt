@@ -1,0 +1,199 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.cimon_1"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="34" />
+10
+11    <permission
+11-->[androidx.core:core:1.9.0] C:\Users\khorc\.gradle\caches\transforms-3\1dc4e537ab8bb504569a422ebbb76397\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+12        android:name="com.example.cimon_1.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+12-->[androidx.core:core:1.9.0] C:\Users\khorc\.gradle\caches\transforms-3\1dc4e537ab8bb504569a422ebbb76397\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+13        android:protectionLevel="signature" />
+13-->[androidx.core:core:1.9.0] C:\Users\khorc\.gradle\caches\transforms-3\1dc4e537ab8bb504569a422ebbb76397\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+14
+15    <uses-permission android:name="com.example.cimon_1.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+15-->[androidx.core:core:1.9.0] C:\Users\khorc\.gradle\caches\transforms-3\1dc4e537ab8bb504569a422ebbb76397\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+15-->[androidx.core:core:1.9.0] C:\Users\khorc\.gradle\caches\transforms-3\1dc4e537ab8bb504569a422ebbb76397\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+16
+17    <application
+17-->C:\Users\khorc\AndroidStudioProjects\Cimon-2\app\src\main\AndroidManifest.xml:6:5-63:19
+18        android:allowBackup="true"
+18-->C:\Users\khorc\AndroidStudioProjects\Cimon-2\app\src\main\AndroidManifest.xml:7:9-35
+19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+19-->[androidx.core:core:1.9.0] C:\Users\khorc\.gradle\caches\transforms-3\1dc4e537ab8bb504569a422ebbb76397\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+20        android:dataExtractionRules="@xml/data_extraction_rules"
+20-->C:\Users\khorc\AndroidStudioProjects\Cimon-2\app\src\main\AndroidManifest.xml:8:9-65
+21        android:debuggable="true"
+22        android:extractNativeLibs="false"
+23        android:fullBackupContent="@xml/backup_rules"
+23-->C:\Users\khorc\AndroidStudioProjects\Cimon-2\app\src\main\AndroidManifest.xml:9:9-54
+24        android:icon="@mipmap/ic_launcher"
+24-->C:\Users\khorc\AndroidStudioProjects\Cimon-2\app\src\main\AndroidManifest.xml:10:9-43
+25        android:label="@string/app_name"
+25-->C:\Users\khorc\AndroidStudioProjects\Cimon-2\app\src\main\AndroidManifest.xml:11:9-41
+26        android:roundIcon="@mipmap/ic_launcher_round"
+26-->C:\Users\khorc\AndroidStudioProjects\Cimon-2\app\src\main\AndroidManifest.xml:12:9-54
+27        android:supportsRtl="true"
+27-->C:\Users\khorc\AndroidStudioProjects\Cimon-2\app\src\main\AndroidManifest.xml:13:9-35
+28        android:testOnly="true"
+29        android:theme="@style/Theme.Cimon1" >
+29-->C:\Users\khorc\AndroidStudioProjects\Cimon-2\app\src\main\AndroidManifest.xml:14:9-44
+30        <activity
+30-->C:\Users\khorc\AndroidStudioProjects\Cimon-2\app\src\main\AndroidManifest.xml:16:9-25:20
+31            android:name="com.example.cimon_1.MainActivity"
+31-->C:\Users\khorc\AndroidStudioProjects\Cimon-2\app\src\main\AndroidManifest.xml:17:13-41
+32            android:exported="true"
+32-->C:\Users\khorc\AndroidStudioProjects\Cimon-2\app\src\main\AndroidManifest.xml:18:13-36
+33            android:theme="@style/Theme.Cimon1" >
+33-->C:\Users\khorc\AndroidStudioProjects\Cimon-2\app\src\main\AndroidManifest.xml:19:13-48
+34            <intent-filter>
+34-->C:\Users\khorc\AndroidStudioProjects\Cimon-2\app\src\main\AndroidManifest.xml:20:13-24:29
+35                <action android:name="android.intent.action.MAIN" />
+35-->C:\Users\khorc\AndroidStudioProjects\Cimon-2\app\src\main\AndroidManifest.xml:21:17-69
+35-->C:\Users\khorc\AndroidStudioProjects\Cimon-2\app\src\main\AndroidManifest.xml:21:25-66
+36
+37                <category android:name="android.intent.category.LAUNCHER" />
+37-->C:\Users\khorc\AndroidStudioProjects\Cimon-2\app\src\main\AndroidManifest.xml:23:17-77
+37-->C:\Users\khorc\AndroidStudioProjects\Cimon-2\app\src\main\AndroidManifest.xml:23:27-74
+38            </intent-filter>
+39        </activity>
+40
+41        <!-- Start Activity -->
+42        <activity
+42-->C:\Users\khorc\AndroidStudioProjects\Cimon-2\app\src\main\AndroidManifest.xml:28:9-31:20
+43            android:name="com.example.cimon_1.StartActivity"
+43-->C:\Users\khorc\AndroidStudioProjects\Cimon-2\app\src\main\AndroidManifest.xml:29:13-42
+44            android:label="Start Activity" >
+44-->C:\Users\khorc\AndroidStudioProjects\Cimon-2\app\src\main\AndroidManifest.xml:30:13-43
+45        </activity>
+46
+47        <!-- LeaderBoard Activity -->
+48        <activity
+48-->C:\Users\khorc\AndroidStudioProjects\Cimon-2\app\src\main\AndroidManifest.xml:34:9-37:20
+49            android:name="com.example.cimon_1.LeaderBoardActivity"
+49-->C:\Users\khorc\AndroidStudioProjects\Cimon-2\app\src\main\AndroidManifest.xml:35:13-48
+50            android:label="LeaderBoard Activity" >
+50-->C:\Users\khorc\AndroidStudioProjects\Cimon-2\app\src\main\AndroidManifest.xml:36:13-49
+51        </activity>
+52
+53        <!-- Settings Activity -->
+54        <activity
+54-->C:\Users\khorc\AndroidStudioProjects\Cimon-2\app\src\main\AndroidManifest.xml:40:9-43:20
+55            android:name="com.example.cimon_1.SettingsActivity"
+55-->C:\Users\khorc\AndroidStudioProjects\Cimon-2\app\src\main\AndroidManifest.xml:41:13-45
+56            android:label="Settings Activity" >
+56-->C:\Users\khorc\AndroidStudioProjects\Cimon-2\app\src\main\AndroidManifest.xml:42:13-46
+57        </activity>
+58
+59        <!-- About Activity -->
+60        <activity
+60-->C:\Users\khorc\AndroidStudioProjects\Cimon-2\app\src\main\AndroidManifest.xml:46:9-49:20
+61            android:name="com.example.cimon_1.AboutActivity"
+61-->C:\Users\khorc\AndroidStudioProjects\Cimon-2\app\src\main\AndroidManifest.xml:47:13-42
+62            android:label="About Activity" >
+62-->C:\Users\khorc\AndroidStudioProjects\Cimon-2\app\src\main\AndroidManifest.xml:48:13-43
+63        </activity>
+64
+65        <!-- Profile Activity -->
+66        <activity
+66-->C:\Users\khorc\AndroidStudioProjects\Cimon-2\app\src\main\AndroidManifest.xml:52:9-55:20
+67            android:name="com.example.cimon_1.ProfileActivity"
+67-->C:\Users\khorc\AndroidStudioProjects\Cimon-2\app\src\main\AndroidManifest.xml:53:13-44
+68            android:label="Profile Activity" >
+68-->C:\Users\khorc\AndroidStudioProjects\Cimon-2\app\src\main\AndroidManifest.xml:54:13-45
+69        </activity>
+70
+71        <!-- GamePage Activity -->
+72        <activity
+72-->C:\Users\khorc\AndroidStudioProjects\Cimon-2\app\src\main\AndroidManifest.xml:58:9-61:20
+73            android:name="com.example.cimon_1.GamePageActivity"
+73-->C:\Users\khorc\AndroidStudioProjects\Cimon-2\app\src\main\AndroidManifest.xml:59:13-45
+74            android:label="GamePage Activity" >
+74-->C:\Users\khorc\AndroidStudioProjects\Cimon-2\app\src\main\AndroidManifest.xml:60:13-46
+75        </activity>
+76
+77        <provider
+77-->[androidx.emoji2:emoji2:1.2.0] C:\Users\khorc\.gradle\caches\transforms-3\8679a131afd0b014edc9a9a00548d26a\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+78            android:name="androidx.startup.InitializationProvider"
+78-->[androidx.emoji2:emoji2:1.2.0] C:\Users\khorc\.gradle\caches\transforms-3\8679a131afd0b014edc9a9a00548d26a\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+79            android:authorities="com.example.cimon_1.androidx-startup"
+79-->[androidx.emoji2:emoji2:1.2.0] C:\Users\khorc\.gradle\caches\transforms-3\8679a131afd0b014edc9a9a00548d26a\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+80            android:exported="false" >
+80-->[androidx.emoji2:emoji2:1.2.0] C:\Users\khorc\.gradle\caches\transforms-3\8679a131afd0b014edc9a9a00548d26a\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+81            <meta-data
+81-->[androidx.emoji2:emoji2:1.2.0] C:\Users\khorc\.gradle\caches\transforms-3\8679a131afd0b014edc9a9a00548d26a\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+82                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+82-->[androidx.emoji2:emoji2:1.2.0] C:\Users\khorc\.gradle\caches\transforms-3\8679a131afd0b014edc9a9a00548d26a\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+83                android:value="androidx.startup" />
+83-->[androidx.emoji2:emoji2:1.2.0] C:\Users\khorc\.gradle\caches\transforms-3\8679a131afd0b014edc9a9a00548d26a\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+84            <meta-data
+84-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\khorc\.gradle\caches\transforms-3\5df10c7fd462dab562e8156415a64247\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+85                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+85-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\khorc\.gradle\caches\transforms-3\5df10c7fd462dab562e8156415a64247\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+86                android:value="androidx.startup" />
+86-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\khorc\.gradle\caches\transforms-3\5df10c7fd462dab562e8156415a64247\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+87            <meta-data
+87-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\khorc\.gradle\caches\transforms-3\904562c2ddcec721113beb5f00a93022\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+88                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+88-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\khorc\.gradle\caches\transforms-3\904562c2ddcec721113beb5f00a93022\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+89                android:value="androidx.startup" />
+89-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\khorc\.gradle\caches\transforms-3\904562c2ddcec721113beb5f00a93022\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+90        </provider>
+91
+92        <uses-library
+92-->[androidx.window:window:1.0.0] C:\Users\khorc\.gradle\caches\transforms-3\11b2e4dac9a528c284bebad629f2025d\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+93            android:name="androidx.window.extensions"
+93-->[androidx.window:window:1.0.0] C:\Users\khorc\.gradle\caches\transforms-3\11b2e4dac9a528c284bebad629f2025d\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+94            android:required="false" />
+94-->[androidx.window:window:1.0.0] C:\Users\khorc\.gradle\caches\transforms-3\11b2e4dac9a528c284bebad629f2025d\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+95        <uses-library
+95-->[androidx.window:window:1.0.0] C:\Users\khorc\.gradle\caches\transforms-3\11b2e4dac9a528c284bebad629f2025d\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+96            android:name="androidx.window.sidecar"
+96-->[androidx.window:window:1.0.0] C:\Users\khorc\.gradle\caches\transforms-3\11b2e4dac9a528c284bebad629f2025d\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+97            android:required="false" />
+97-->[androidx.window:window:1.0.0] C:\Users\khorc\.gradle\caches\transforms-3\11b2e4dac9a528c284bebad629f2025d\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+98
+99        <receiver
+99-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\khorc\.gradle\caches\transforms-3\904562c2ddcec721113beb5f00a93022\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+100            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+100-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\khorc\.gradle\caches\transforms-3\904562c2ddcec721113beb5f00a93022\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+101            android:directBootAware="false"
+101-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\khorc\.gradle\caches\transforms-3\904562c2ddcec721113beb5f00a93022\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+102            android:enabled="true"
+102-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\khorc\.gradle\caches\transforms-3\904562c2ddcec721113beb5f00a93022\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+103            android:exported="true"
+103-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\khorc\.gradle\caches\transforms-3\904562c2ddcec721113beb5f00a93022\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+104            android:permission="android.permission.DUMP" >
+104-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\khorc\.gradle\caches\transforms-3\904562c2ddcec721113beb5f00a93022\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+105            <intent-filter>
+105-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\khorc\.gradle\caches\transforms-3\904562c2ddcec721113beb5f00a93022\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+106                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+106-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\khorc\.gradle\caches\transforms-3\904562c2ddcec721113beb5f00a93022\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+106-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\khorc\.gradle\caches\transforms-3\904562c2ddcec721113beb5f00a93022\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+107            </intent-filter>
+108            <intent-filter>
+108-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\khorc\.gradle\caches\transforms-3\904562c2ddcec721113beb5f00a93022\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+109                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+109-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\khorc\.gradle\caches\transforms-3\904562c2ddcec721113beb5f00a93022\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+109-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\khorc\.gradle\caches\transforms-3\904562c2ddcec721113beb5f00a93022\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+110            </intent-filter>
+111            <intent-filter>
+111-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\khorc\.gradle\caches\transforms-3\904562c2ddcec721113beb5f00a93022\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+112                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+112-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\khorc\.gradle\caches\transforms-3\904562c2ddcec721113beb5f00a93022\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+112-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\khorc\.gradle\caches\transforms-3\904562c2ddcec721113beb5f00a93022\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+113            </intent-filter>
+114            <intent-filter>
+114-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\khorc\.gradle\caches\transforms-3\904562c2ddcec721113beb5f00a93022\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+115                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+115-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\khorc\.gradle\caches\transforms-3\904562c2ddcec721113beb5f00a93022\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+115-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\khorc\.gradle\caches\transforms-3\904562c2ddcec721113beb5f00a93022\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+116            </intent-filter>
+117        </receiver>
+118    </application>
+119
+120</manifest>
