@@ -32,9 +32,9 @@ public class EditProfileActivity extends AppCompatActivity {
     private ImageView close;
     private TextView save;
     //https://jitpack.io/p/fa-hessari/materialedittext need to add dependencies
-    //private MaterialEditText fullname;
-   // private MaterialEditText username;
-   // private MaterialEditText bio;
+    private MaterialEditText fullname;
+    private MaterialEditText username;
+    private MaterialEditText bio;
 
     private FirebaseUser fUser;
     private StorageTask uploadTask;

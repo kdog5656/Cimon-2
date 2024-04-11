@@ -1,0 +1,6 @@
+//https://firebase.google.com/docs/rules/manage-deploy
+// Set up Realtime Database in your project directory, creates a .rules file
+firebase init database
+
+// Deploy your .rules file
+firebase deploy --only database
