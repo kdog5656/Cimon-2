@@ -9,25 +9,49 @@
     android:gravity="center"
     android:background="@drawable/homecimon">
 
+    <ImageView
+        android:id="@+id/circle2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/circle"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="@id/About_Button"
+        app:layout_constraintEnd_toEndOf="@id/About_Button"
+        app:layout_constraintStart_toStartOf="@id/About_Button"
+        app:layout_constraintTop_toTopOf="@id/About_Button"
+        tools:ignore="SpeakableTextPresentCheck" />
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/About_Button"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:backgroundTint="#158BE4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/question_mark"
         android:onClick="onClick"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintHorizontal_bias="0.072"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.14"
+        app:layout_constraintVertical_bias="0.139"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/circle3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/circle"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="@id/Profile_Button"
+        app:layout_constraintEnd_toEndOf="@id/Profile_Button"
+        app:layout_constraintStart_toStartOf="@id/Profile_Button"
+        app:layout_constraintTop_toTopOf="@id/Profile_Button"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/Leaderboard_Button"
         android:layout_width="185dp"
         android:layout_height="50dp"
-        android:backgroundTint="#158BE4"
+        android:background="@drawable/btn_bg"
         android:text="@string/leaderboard"
         android:textColor="#FFFF"
         android:textSize="23sp"
@@ -40,26 +64,26 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/Profile_Button"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:backgroundTint="#158BE4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/profile_image"
         android:onClick="onClick"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintHorizontal_bias="0.93"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.14"
+        app:layout_constraintVertical_bias="0.139"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/Settings_Button"
         android:layout_width="185dp"
-        android:layout_height="51dp"
-        android:backgroundTint="#158BE4"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_bg"
         android:text="@string/settings"
         android:textColor="#FFFF"
-        android:textSize="25sp"
+        android:textSize="23sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -70,10 +94,10 @@
         android:id="@+id/Start_Button"
         android:layout_width="185dp"
         android:layout_height="50dp"
-        android:backgroundTint="#158BE4"
+        android:background="@drawable/btn_bg"
         android:text="@string/start"
         android:textColor="#FFFF"
-        android:textSize="25sp"
+        android:textSize="23sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
