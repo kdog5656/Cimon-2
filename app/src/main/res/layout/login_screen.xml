@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/logo_cimon"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout0"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="@string/username"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editUserName"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="15dp"
+            android:hint="@string/enter_username"
+            android:textColor="@color/white"
+            android:autofillHints=""
+            android:inputType="text">
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="@string/password"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/editPassword"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:password="true"
+            android:padding="15dp"
+            android:hint="@string/enter_password"
+            android:textColor="@color/white"
+            android:autofillHints=""
+            android:inputType="text"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="16sp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLogin"
+            android:layout_width="200dp"
+            android:layout_height="91dp"
+            android:background="@drawable/btn_bg"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

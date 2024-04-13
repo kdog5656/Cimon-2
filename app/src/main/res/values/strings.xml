@@ -85,6 +85,11 @@
     <string name="On">On</string>
     <string name="Off">Off</string>
     <string name="Volume_Control">Volume Control</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="enter_username">Enter Username</string>
+    <string name="enter_password">Enter Password</string>
     <string name="About_Cimon">Introducing Cimon, a dynamic and engaging mobile app designed to provide endless entertainment and challenge your cognitive skills. Similar to the classic game Simon Says, Cimon adds its own unique twist with five vibrant colors and two additional thrilling game modes.
 
 In the Original mode, Cimon Says, players must follow the color sequence dictated by the app, testing their memory and attention to detail. It\'s a classic challenge with a modern twist.
@@ -94,13 +99,15 @@ For those seeking a faster-paced experience, Lightning Speed mode pushes your re
 But the excitement doesn't stop there. With Frequency Beat mode, Cimon transforms into a rhythm-based adventure where players sync their taps with the music. Each color pattern syncs dynamically with the beat, offering a fresh challenge with every playthrough.
 
 Whether you're a casual gamer looking for some fun or a competitive player seeking a challenge, Cimon has something for everyone. Stay tuned for updates and get ready to embark on a colorful journey unlike any other.</string>
-    <int number="1">1</int>
-    <int number="2">2</int>
-    <int number="3">3</int>
-    <int number="4">4</int>
-    <int number="5">5</int>
-    <int number="6">6</int>
-    <int number="7">7</int>
-
+    <string name="rank_one">1</string>
+    <string name="rank_two">2</string>
+    <string name="rank_three">3</string>
+    <string name="rank_four">4</string>
+    <string name="rank_five">5</string>
+    <string name="rank_six">6</string>
+    <string name="rank_seven">7</string>
+    <string name="rank_eight">8</string>
+    <string name="nine">9</string>
+    <string name="rank_ten">10</string>
 
 </resources>

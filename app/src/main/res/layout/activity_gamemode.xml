@@ -35,6 +35,7 @@
         android:background="@drawable/btn_bg"
         android:checked="true"
         android:text="@string/Cimon_Says"
+        android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -42,7 +43,7 @@
         app:layout_constraintHorizontal_bias="0.482"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.475" />
+        app:layout_constraintVertical_bias="0.357" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/Madness_Button"
@@ -55,6 +56,7 @@
         android:background="@drawable/btn_bg"
         android:checked="true"
         android:text="@string/Madness"
+        android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -62,7 +64,7 @@
         app:layout_constraintHorizontal_bias="0.482"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.654" />
+        app:layout_constraintVertical_bias="0.594" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/Beat_Button"
@@ -75,13 +77,14 @@
         android:background="@drawable/btn_bg"
         android:checked="true"
         android:text="@string/Frequency_Beat"
+        android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.62"
+        app:layout_constraintHorizontal_bias="0.482"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.839" />
+        app:layout_constraintVertical_bias="0.836" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
