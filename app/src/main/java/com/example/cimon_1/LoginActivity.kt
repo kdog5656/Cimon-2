@@ -5,20 +5,21 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 
-class ProfileActivity : Activity() {
+class LoginActivity : Activity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_profile)
+        setContentView(R.layout.activity_login)
     }
 
     fun onClick(view: View) {
 
         when (view.id) {
 
-            R.id.Logout_Button -> {
+            R.id.Login_Button -> {
 
-                val logoutButtonIntent = Intent(this, GamePageActivity::class.java)
-                startActivity(logoutButtonIntent)
+                val loginIntent = Intent(this, GamePageActivity::class.java)
+                startActivity(loginIntent)
             }
         }
     }

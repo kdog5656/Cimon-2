@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/cimon_colors">
@@ -11,7 +12,8 @@
         android:background="@drawable/circle"
         android:padding="8dp"
         android:src="@drawable/face"
-        android:gravity="center" />
+        android:gravity="center"
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/profile_main"
@@ -22,13 +24,6 @@
         android:textColor="@color/white"
         android:textSize="30sp"
         android:textStyle="bold"/>
-
-    <TableRow
-        android:layout_height="wrap_content"
-        android:layout_width="fill_parent"
-        android:gravity="center_horizontal">
-
-    </TableRow>
 
     <TableRow
         android:id="@+id/tableRow1"
@@ -52,7 +47,7 @@
 
 
     <ProgressBar
-        android:id="@+id/background_progressbar0"
+        android:id="@+id/accuracy_progressbar"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="163dp"
         android:layout_height="130dp"
@@ -83,7 +78,7 @@
 
 
     <ProgressBar
-        android:id="@+id/background_progressbar1"
+        android:id="@+id/time_progressbar"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="163dp"
         android:layout_height="130dp"
@@ -111,7 +106,7 @@
         android:textStyle="bold" />
 
     <ProgressBar
-        android:id="@+id/background_progressbar2"
+        android:id="@+id/span_progressbar"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="163dp"
         android:layout_height="130dp"
@@ -119,14 +114,15 @@
     </TableRow>
 
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/Logout"
+    <Button
+        android:id="@+id/Logout_Button"
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:background="@drawable/btn_bg"
         android:text="@string/Logout"
         android:textColor="@color/white"
         android:textSize="15sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:onClick="Click" />
 
 </TableLayout>
