@@ -18,7 +18,7 @@
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:gravity="end"
-            android:text="@string/username"
+            android:text="username"
             android:textColor="#ffffff"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -29,7 +29,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:padding="15dp"
-            android:hint="@string/enter_username"
+            android:hint="username"
             android:textColor="@color/white"
             android:autofillHints=""
             android:inputType="text">
@@ -46,7 +46,7 @@
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:gravity="end"
-            android:text="@string/password"
+            android:text="password"
             android:textColor="#ffffff"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -58,7 +58,7 @@
             android:layout_height="wrap_content"
             android:password="true"
             android:padding="15dp"
-            android:hint="@string/enter_password"
+            android:hint="password"
             android:textColor="@color/white"
             android:autofillHints=""
             android:inputType="text"/>
@@ -73,11 +73,12 @@
         android:padding="16sp">
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnLogin"
+            android:id="@+id/Login_Button"
             android:layout_width="200dp"
             android:layout_height="91dp"
             android:background="@drawable/btn_bg"
-            android:text="@string/login"
+            android:text="login"
+            android:onClick="onClick"
             android:textColor="@color/white"
             android:textSize="40sp"
             android:textStyle="bold" />
