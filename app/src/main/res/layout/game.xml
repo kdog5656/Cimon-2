@@ -120,13 +120,13 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.52" />
 
-    <View
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/Pause"
         android:layout_width="75dp"
         android:layout_height="75dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="13dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/pause"
         android:contentDescription="@string/Pause"
@@ -138,12 +138,27 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.054" />
 
-    <View
+    <ImageView
+        android:id="@+id/circle1"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/circle"
+        android:contentDescription="@string/About"
+        android:elevation="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/Pause"
+        app:layout_constraintEnd_toEndOf="@id/Pause"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/Pause"
+        app:layout_constraintTop_toTopOf="@id/Pause"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/About"
         android:layout_width="75dp"
         android:layout_height="75dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="0dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/question_mark"
@@ -155,6 +170,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.054" />
+
+    <ImageView
+        android:id="@+id/circle0"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/circle"
+        android:contentDescription="@string/About"
+        android:elevation="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/About"
+        app:layout_constraintEnd_toEndOf="@id/About"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/About"
+        app:layout_constraintTop_toTopOf="@id/About"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="SpeakableTextPresentCheck" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

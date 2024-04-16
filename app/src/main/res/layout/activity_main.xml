@@ -10,7 +10,7 @@
     android:background="@drawable/homecimon">
 
     <ImageView
-        android:id="@+id/circle2"
+        android:id="@+id/circle0"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:background="@drawable/circle"
@@ -19,7 +19,8 @@
         app:layout_constraintEnd_toEndOf="@id/About_Button"
         app:layout_constraintStart_toStartOf="@id/About_Button"
         app:layout_constraintTop_toTopOf="@id/About_Button"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck"
+        android:contentDescription="@string/About"/>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/About_Button"
@@ -36,7 +37,7 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageView
-        android:id="@+id/circle3"
+        android:id="@+id/circle1"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:background="@drawable/circle"
@@ -45,7 +46,8 @@
         app:layout_constraintEnd_toEndOf="@id/Profile_Button"
         app:layout_constraintStart_toStartOf="@id/Profile_Button"
         app:layout_constraintTop_toTopOf="@id/Profile_Button"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck"
+        android:contentDescription="@string/Profile"/>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/Leaderboard_Button"
