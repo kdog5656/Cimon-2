@@ -67,21 +67,21 @@ public class RegisterActivity extends AppCompatActivity{
 
                 if(TextUtils.isEmpty(txtUsername)||TextUtils.isEmpty(txtName)|| TextUtils.isEmpty(txtEmail) || TextUtils.isEmptyPassword)){
                     Toast.makeText(RegisterActivity.this, "Empty Credentials! try again", Toast.LENGTH_SHORT).SHOW();
-                }else if(txtPassword.length()<6{
+                }
+                else if(txtPassword.length()<6){//ask for second pair of eye to check this
                      Toast.makeText(registerActivity.this, "Password too short. Must be at least 6 char", Toast.LENGTH_SHORT.show();
                 }else{
                     registerUser(txtUsername, txtName, txtEmail, txtPassword);
                 }
            }
-        }
-    });
-}
+
+        });
 
 private void registerUser(final String username, final String name, final String email, String password){
     pd.setMessage("Please wait!");
     pd.show();
 
-    mAuth.createUserWithEmailAndPasswordemail, password).addOnSuccessListener(new OnSuccessListener<AuthResult>(){
+    mAuth.createUserWithEmailAndPasswordemail, password.addOnSuccessListener(new OnSuccessListener<AuthResult>(){
           @Override
           public void onSuccess(AuthResult authResult){
               HashMap<String, Object> map=new HashMap<>();
@@ -100,7 +100,7 @@ private void registerUser(final String username, final String name, final String
                           pd.dismiss();
                           Toast.makeText(registerActivity.this, "Update your profile for a better experience", Toast.LENGTH_SHORT).show();
 
-                          Intent intent intent= new Intent(RegisterActivity.this, MainActivity.class);
+                          Intent intent= new Intent(RegisterActivity.this, MainActivity.class);
                           intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK| Intent.FLAG_ACTIVITY_CLEAR_TOP);
                           startActivity(intent);
                         }
@@ -108,12 +108,13 @@ private void registerUser(final String username, final String name, final String
                   }
               });
           }
-    }).addOnFailureListener(new OnFailureListener(){
+        ;})mAuth.addOnFailureListener(new OnFailureListener(){
       @Override
       public void onFailure(@NonNull Exception e){
           pd.dismiss();
           Toast.makeText(RegisterActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
       }
     });
+    }
 }
 

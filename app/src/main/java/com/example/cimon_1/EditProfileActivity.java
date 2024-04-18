@@ -81,7 +81,6 @@ public class EditProfileActivity extends AppCompatActivity {
                 finish();
             }
         });
-    }
 
         save.setOnClickListener(new View.OnClickListener() {
         @Override
