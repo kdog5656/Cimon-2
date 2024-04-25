@@ -26,7 +26,7 @@
         tools:layout_editor_absoluteY="125dp" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/red_square"
+        android:id="@+id/Red_Button"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginStart="16dp"
@@ -45,7 +45,7 @@
         app:layout_constraintVertical_bias="0.353" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/yellow_square"
+        android:id="@+id/Yellow_Button"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginStart="16dp"
@@ -64,7 +64,7 @@
         app:layout_constraintVertical_bias="0.52" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/purple_square"
+        android:id="@+id/Purple_Button"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginStart="16dp"
@@ -83,7 +83,7 @@
         app:layout_constraintVertical_bias="0.519" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/green_square"
+        android:id="@+id/Green_Button"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginStart="16dp"
@@ -102,7 +102,7 @@
         app:layout_constraintVertical_bias="0.686" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/blue_square"
+        android:id="@+id/Blue_Button"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginStart="16dp"
@@ -120,8 +120,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.52" />
 
-    <View
-        android:id="@+id/Pause"
+    <Button
+        android:id="@+id/Pause_Button"
         android:layout_width="75dp"
         android:layout_height="75dp"
         android:layout_marginStart="16dp"
@@ -138,8 +138,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.054" />
 
-    <View
-        android:id="@+id/About"
+    <Button
+        android:id="@+id/About_Button"
         android:layout_width="75dp"
         android:layout_height="75dp"
         android:layout_marginStart="16dp"

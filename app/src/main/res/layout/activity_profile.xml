@@ -165,7 +165,7 @@
     </TextView>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/Logout"
+        android:id="@+id/Logout_Button"
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:layout_below="@id/Attention"
