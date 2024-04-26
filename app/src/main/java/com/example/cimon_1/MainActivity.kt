@@ -28,24 +28,24 @@ class MainActivity : AppCompatActivity() {
 
         setSupportActionBar(binding.toolbar)
 
-        val navController = findNavController(R.id.nav_host_fragment_content_main)
+        val navController = findNavController(androidx.navigation.fragment.R.id.nav_host_fragment_container)
         appBarConfiguration = AppBarConfiguration(navController.graph)
         setupActionBarWithNavController(navController, appBarConfiguration)
 
-        binding.fab.setOnClickListener ( view){
+        binding.fab.setOnClickListener { view -> run {
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
-            }
+        }
         }
     }
 
-    fun onCreateOptionsMenu(menu: Menu): Boolean {
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
         menuInflater.inflate(R.menu.menu_main, menu)
         return true
     }
 
-    fun onOptionsItemSelected(item: MenuItem): Boolean {
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
@@ -55,11 +55,10 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-//    fun onSupportNavigateUp(): Boolean {
-//        val navController = findNavController(R.id.nav_host_fragment_content_main)
-//        return navController.navigateUp(appBarConfiguration)
-//                || super.onSupportNavigateUp()
-//    }
+    override fun onSupportNavigateUp(): Boolean {
+        val navController = findNavController(androidx.navigation.fragment.R.id.nav_host_fragment_container)
+        return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
+    }
 
     fun onClick(view: View) {
 
