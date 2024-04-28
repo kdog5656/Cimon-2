@@ -9,6 +9,28 @@
     android:gravity="center"
     android:background="@drawable/homecimon">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="672dp"
+        android:background="?attr/colorPrimary"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabLeft"
+        android:layout_width="68dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="344dp"
+        android:layout_marginBottom="16dp"
+        android:importantForAccessibility="no"
+        android:src="@drawable/ic_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintMarginBottom="16dp"
+        app:layout_constraintMarginEnd="16dp" />
+
     <ImageView
         android:id="@+id/circle0"
         android:layout_width="50dp"
@@ -57,7 +79,7 @@
         android:text="@string/leaderboard"
         android:textColor="#FFFF"
         android:textSize="23sp"
-        android:onClick="Click"
+        android:onClick="onClick"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -87,7 +109,7 @@
         android:text="@string/settings"
         android:textColor="#FFFF"
         android:textSize="23sp"
-        android:onClick="Click"
+        android:onClick="onClick"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -102,7 +124,7 @@
         android:text="@string/start"
         android:textColor="#FFFF"
         android:textSize="23sp"
-        android:onClick="Click"
+        android:onClick="onClick"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -1,7 +1,6 @@
 package com.example.cimon_1
 
 import android.app.Activity
-import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.os.Handler
@@ -9,19 +8,72 @@ import android.view.View
 import android.widget.Button
 
 class GamePageActivity : Activity() {
+
+    private val timer = Handler()  // handler for timer
+    private val delayDuration = 1000L
+    private val flashDuration = 500L
+
+    private val gameColorQueue = mutableListOf<Int>() // log of colors used, for user to repeat
+    private val gameButtons = listOf(
+
+        R.id.Red_Button,
+        R.id.Yellow_Button,
+        R.id.Purple_Button,
+        R.id.Blue_Button,
+
+    )
+    private var userIndex = 0  // user tracker
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_game)
+        newGame() // start game
     }
 
-    private fun onButtonFlash(buttonId: Int) {
+    private fun newGame() {
 
-        val timer = Handler()
+        gameColorQueue.clear()    // reset game
+        userIndex = 0        // Index user place in game
+        addNewColorToQueue()      // add another color to the queue
+        repeatPattern()    // flash pattern
+    }
+
+    private fun buttonToggle(currentButton: Button): Boolean {
+
+     for (element in gameButtons) {
+
+         val currentButtonId = findViewById<Button>(element) // access button information from button Index
+
+         if (){
+
+             currentButton.isClickable = true
+         }
+         else {
+
+             currentButton.isClickable = false
+         }
+     }
+}
+    private fun addNewColorToQueue() {
+
+        val randoColor = gameButtons.random() // pick random button from game buttons
+        gameColorQueue.add(randoColor) // add random button to game queue
+    }
+
+    private fun repeatPattern() {
+
+        buttonToggle()
+
+    }
+
+
+
+    private fun buttonFlash(buttonId: Int) {
 
         val accessButton = findViewById<Button>(buttonId)
         // access button info
 
-        val buttonColor = accessButton.background
+        val buttonColor = accessButton.background.mutate()
         // log original button color
 
 
@@ -31,7 +83,7 @@ class GamePageActivity : Activity() {
                 accessButton.background.setTint(Color.RED)
                 // flash button
 
-                timer.postDelayed({accessButton.background = buttonColor }, 1000)
+                timer.postDelayed({ accessButton.background = buttonColor }, 1000)
                 // change button color back to normal
             }
 
@@ -39,7 +91,7 @@ class GamePageActivity : Activity() {
                 buttonColor.setTint(Color.YELLOW)
                 // flash button
 
-                timer.postDelayed({accessButton.background = buttonColor }, 1000)
+                timer.postDelayed({ accessButton.background = buttonColor }, 1000)
                 // change button color back to normal
             }
 
@@ -47,7 +99,7 @@ class GamePageActivity : Activity() {
                 buttonColor.setTint(Color.MAGENTA)
                 // flash button
 
-                timer.postDelayed({accessButton.background = buttonColor }, 1000)
+                timer.postDelayed({ accessButton.background = buttonColor }, 1000)
                 // change button color back to normal
             }
 
@@ -55,7 +107,7 @@ class GamePageActivity : Activity() {
                 buttonColor.setTint(Color.BLUE)
                 // flash button
 
-                timer.postDelayed({accessButton.background = buttonColor }, 1000)
+                timer.postDelayed({ accessButton.background = buttonColor }, 1000)
                 // change button color back to normal
             }
         }
@@ -67,63 +119,39 @@ class GamePageActivity : Activity() {
 
             R.id.Red_Button -> {
 
-                val redButtonIntent = Intent(this, GamePageActivity::class.java)
-                // this (button) -> needs to be flash & record button click
-
-                startActivity(redButtonIntent)
-                // button does wanted action
-
-                onButtonFlash(R.id.Red_Button)
+                buttonFlash(R.id.Red_Button)
                 // flash color on click
+
+
+
             }
+
             R.id.Yellow_Button -> {
 
-                val yellowButtonIntent = Intent(this, GamePageActivity::class.java)
-                // this (button) -> needs to be flash & record button click
-
-                startActivity(yellowButtonIntent)
-                // button does wanted action
-
-                onButtonFlash(R.id.Yellow_Button)
+                buttonFlash(R.id.Yellow_Button)
                 // flash color on click
             }
+
             R.id.Purple_Button -> {
 
-                val purpleButtonIntent = Intent(this, GamePageActivity::class.java)
-                // this (button) -> needs to be flash & record button click
-
-                startActivity(purpleButtonIntent)
-                // button does wanted action
-
-                onButtonFlash(R.id.Purple_Button)
+                buttonFlash(R.id.Purple_Button)
                 // flash color on click
             }
+
             R.id.Blue_Button -> {
 
-                val blueButtonIntent = Intent(this, GamePageActivity::class.java)
-                // this (button) -> needs to be flash & record button click
-
-                startActivity(blueButtonIntent)
-                // button does wanted action
-
-                onButtonFlash(R.id.Blue_Button)
+                buttonFlash(R.id.Blue_Button)
                 // flash color on click
             }
+
             R.id.Pause_Button -> {
 
-                val pauseButtonIntent = Intent(this, GamePageActivity::class.java)
-                // this (button) -> needs to be flash & record button click
 
-                startActivity(pauseButtonIntent)
-                // button does wanted action
             }
+
             R.id.About_Button -> {
 
-                val aboutButtonIntent = Intent(this, GamePageActivity::class.java)
-                // this (button) -> needs to be flash & record button click
 
-                startActivity(aboutButtonIntent)
-                // button does wanted action
             }
         }
     }
