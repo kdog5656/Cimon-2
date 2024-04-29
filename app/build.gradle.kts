@@ -50,8 +50,17 @@ dependencies {
     implementation("androidx.annotation:annotation:1.6.0")
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.7.0")
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
+
+    // Import the Firebase BoM
+    implementation(platform("com.google.firebase:firebase-bom:32.8.1"))
     implementation("com.google.firebase:firebase-database:20.3.1")// firebase database
+    //Dont know if we want to have authenticator or not atm
+    // For example, add the dependencies for Firebase Authentication and Cloud Firestore
+//    implementation("com.google.firebase:firebase-auth")
+//    implementation("com.google.firebase:firebase-firestore")
+
     testImplementation("junit:junit:4.13.2")
+
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 }
