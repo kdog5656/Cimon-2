@@ -5,8 +5,8 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat.startActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
@@ -35,12 +35,39 @@ class MainActivity : AppCompatActivity() {
         appBarConfiguration = AppBarConfiguration(navController.graph)
         setupActionBarWithNavController(navController, appBarConfiguration)
 
+        val startButton = findViewById<Button>(R.id.Start_Button)
+        val leaderboardButton = findViewById<Button>(R.id.Leaderboard_Button)
+        val settingsButton = findViewById<Button>(R.id.Settings_Button)
+        val aboutButton = findViewById<Button>(R.id.About_Button)
+        val profileButton = findViewById<Button>(R.id.Profile_Button)
+
+        startButton.setOnClickListener { onClick(it) }
+        leaderboardButton.setOnClickListener { onClick(it) }
+        settingsButton.setOnClickListener { onClick(it) }
+        aboutButton.setOnClickListener { onClick(it) }
+        profileButton.setOnClickListener { onClick(it) }
+
         binding.fabLeft.setOnClickListener { view -> // created UI element on main xml
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                 .setAction("Action",null).show()
             }
         }
+
+    private fun onClick(view: View) {
+
+        val intent = when (view.id) {
+
+            R.id.Start_Button -> Intent(this@MainActivity, StartActivity::class.java)
+            R.id.Leaderboard_Button -> Intent(this@MainActivity, LeaderBoardActivity::class.java)
+            R.id.Settings_Button -> Intent(this@MainActivity, SettingsActivity::class.java)
+            R.id.About_Button -> Intent(this@MainActivity, AboutActivity::class.java)
+            R.id.Profile_Button -> Intent(this@MainActivity, ProfileActivity::class.java)
+            else -> throw IllegalArgumentException("Unknown")
+        }
+
+        startActivity(intent)
     }
+}
 
     fun onActionClick(item: MenuItem): Boolean {
         // Handle action bar item clicks here. The action bar will
@@ -58,33 +85,3 @@ class MainActivity : AppCompatActivity() {
 //        return navController.navigateUp(appBarConfiguration)
 //                || super.onSupportNavigateUp()
 //    }
-
-    fun onClick(view: View) {
-
-        when (view.id) {
-
-            R.id.Start_Button -> {
-                val startIntent = Intent(this, StartActivity::class.java)
-                startActivity(startIntent)
-            }
-            R.id.Leaderboard_Button -> {
-                val leaderboardIntent = Intent(this,LeaderBoardActivity::class.java)
-                startActivity(leaderboardIntent)
-            }
-            R.id.Settings_Button -> {
-                val settingsIntent = Intent(this, SettingsActivity::class.java)
-                startActivity(settingsIntent)
-
-            }
-            R.id.About_Button -> {
-                val aboutActivity = Intent(this, AboutActivity::class.java)
-                startActivity(aboutActivity)
-            }
-            R.id.Profile_Button -> {
-                val profileIntent = Intent(this, ProfileActivity::class.java)
-                startActivity(profileIntent)
-            }
-
-        }
-    }
-}

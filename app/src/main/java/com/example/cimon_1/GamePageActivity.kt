@@ -38,22 +38,22 @@ class GamePageActivity : Activity() {
         repeatPattern()    // flash pattern
     }
 
-    private fun buttonToggle(currentButton: Button): Boolean {
-
-     for (element in gameButtons) {
-
-         val currentButtonId = findViewById<Button>(element) // access button information from button Index
-
-         if (){
-
-             currentButton.isClickable = true
-         }
-         else {
-
-             currentButton.isClickable = false
-         }
-     }
-}
+//    private fun buttonToggle(currentButton: Button): Boolean {
+//
+//     for (element in gameButtons) {
+//
+//         val currentButtonId = findViewById<Button>(element) // access button information from button Index
+//
+//         if (){
+//
+//             currentButton.isClickable = true
+//         }
+//         else {
+//
+//             currentButton.isClickable = false
+//         }
+//     }
+//}
     private fun addNewColorToQueue() {
 
         val randoColor = gameButtons.random() // pick random button from game buttons
@@ -62,7 +62,7 @@ class GamePageActivity : Activity() {
 
     private fun repeatPattern() {
 
-        buttonToggle()
+        //buttonToggle()
 
     }
 

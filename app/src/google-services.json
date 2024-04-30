@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "137345153842",
+    "firebase_url": "https://cimon-c2a6c-default-rtdb.firebaseio.com",
+    "project_id": "cimon-c2a6c",
+    "storage_bucket": "cimon-c2a6c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:137345153842:android:0416e6d6017b1cd9c4b52b",
+        "android_client_info": {
+          "package_name": "com.example.cimon_1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCurk4YTd7-ZVhlOwGNHbs5kkRQ8T2N-6E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
