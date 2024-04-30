@@ -113,5 +113,6 @@
     <string name="rank_eight">8</string>
     <string name="rank_nine">9</string>
     <string name="rank_ten">10</string>
+    <string name="p">P</string>
 
 </resources>
