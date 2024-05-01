@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
 
         val intent = when (view.id) {
 
-            R.id.Start_Button -> Intent(this@MainActivity, StartActivity::class.java)
+            R.id.Start_Button -> Intent(this@MainActivity, GamePageActivity::class.java)
             else -> throw IllegalArgumentException("Unknown")
         }
         startActivity(intent)
