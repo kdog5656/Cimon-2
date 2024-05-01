@@ -114,5 +114,9 @@
     <string name="rank_nine">9</string>
     <string name="rank_ten">10</string>
     <string name="p">P</string>
+    <string name="email">username</string>
+    <string name="Password">password</string>
+    <string name="Email">username</string>
+    <string name="Login">login</string>
 
 </resources>
