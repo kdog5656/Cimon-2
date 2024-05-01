@@ -24,7 +24,6 @@ class MainActivity : AppCompatActivity() {
             R.id.Start_Button -> Intent(this@MainActivity, StartActivity::class.java)
             else -> throw IllegalArgumentException("Unknown")
         }
-
         startActivity(intent)
     }
 }
