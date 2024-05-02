@@ -73,12 +73,22 @@ class GamePageActivity : Activity() {
                 userQueue.add(R.id.Blue_Button)
             }
             R.id.Back_Button -> {
+
                 val intent = Intent(this@GamePageActivity, MainActivity::class.java)
                 startActivity(intent)
             }
             R.id.Done_Button -> {
-                compareQueue()
+
+                if(compareQueue()){
                 gameStatus()
+                gameRound++
+                addNewToGameQueue()
+                repeatPattern()
+                }
+                else{
+                gameStatus()
+                newGame()
+                }
             }
         }
     }
@@ -97,19 +107,7 @@ class GamePageActivity : Activity() {
 
     private fun compareQueue(): Boolean {
 
-        val queueResult = gameQueue == userQueue
-
-        when {
-            queueResult -> {
-                gameRound++
-                addNewToGameQueue()
-                repeatPattern()
-                return true
-            }
-            else -> {
-                return false
-            }
-        }
+        return gameQueue == userQueue
     }
 
     private fun addNewToGameQueue() {
@@ -124,12 +122,13 @@ class GamePageActivity : Activity() {
 
                 timer.postDelayed({
                     buttonFlash(button)
-                }, (index * 1100).toLong())  // stop button flash happening at the same time
+                }, (index * 1000).toLong())  // stop button flash happening at the same time
         }
     }
 
     private fun buttonFlash(buttonId: Int) {
         val button = findViewById<Button>(buttonId)
+        val originalColor = button.backgroundTintList  // Save the original button color
 
         // Assigning button color to color of flash
         val flashColor = when (buttonId) {
@@ -137,17 +136,14 @@ class GamePageActivity : Activity() {
             R.id.Yellow_Button -> Color.YELLOW
             R.id.Purple_Button -> Color.MAGENTA
             R.id.Blue_Button -> Color.BLUE
-            else -> {return}
+            else -> return  // Exit if button ID is not recognized
         }
 
-        val originalColor = button.backgroundTintList        // Save the original button color
+        button.backgroundTintList = ColorStateList.valueOf(flashColor)  // Flash the button color
 
-        button.backgroundTintList = ColorStateList.valueOf(flashColor)         // Flash the button color
-
-        val restoreColor = Runnable {
-            button.backgroundTintList = originalColor // restore the original button color
-        }
-
-        timer.postDelayed(restoreColor, 1000) // 1000 = 1 second
+        timer.postDelayed({
+            // Restore the original button color
+            button.backgroundTintList = originalColor
+        }, 1000)  // Delay for 1000 ms (1 second)
     }
 }

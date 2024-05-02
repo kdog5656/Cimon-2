@@ -11,4 +11,11 @@
     <string name="bac"><![CDATA[<-]]></string>
     <string name="play">PLAY!</string>
     <string name="plays">PLAY</string>
+    <string name="c">C</string>
+    <string name="i">I</string>
+    <string name="m">M</string>
+    <string name="o">O</string>
+    <string name="n">N</string>
+    <string name="save">SAVE</string>
+    <string name="backy"><![CDATA[<]]></string>
 </resources>
