@@ -17,7 +17,6 @@ class GamePageActivity : Activity() {
 
     private val gameQueue = mutableListOf<Int>() // log of colors used, for user to repeat
     private val userQueue = mutableListOf<Int>() // log of colors used, from user
-    private val handlerMap = mutableMapOf<Int, Runnable>() // stop button flash from overlapping
 
     private val gameButtons = listOf(
 
@@ -36,20 +35,22 @@ class GamePageActivity : Activity() {
         val blueButton = findViewById<Button>(R.id.Blue_Button)
         val yellowButton = findViewById<Button>(R.id.Yellow_Button)
         val purpleButton = findViewById<Button>(R.id.Purple_Button)
+        val doneButton = findViewById<Button>(R.id.Done_Button)
 
         redButton.setOnClickListener { beginGame(it) }
         blueButton.setOnClickListener { beginGame(it) }
         yellowButton.setOnClickListener { beginGame(it) }
         purpleButton.setOnClickListener { beginGame(it) }
+        doneButton.setOnClickListener{beginGame(it)}
 
-        timer.postDelayed({
+
             newGame()
-        }, 1000) // start game
     }
 
     private fun newGame() {
 
         gameQueue.clear()     // reset game
+        userQueue.clear()     // reset user queue
         gameRound = 0               // reset game round
         addNewToGameQueue()          // add one button to the queue
         repeatPattern()             // flash pattern
@@ -60,59 +61,54 @@ class GamePageActivity : Activity() {
         when (button.id) {
 
             R.id.Red_Button -> {
-
                 userQueue.add(R.id.Red_Button)
-                compareQueue()
-                gameStatus()
             }
-
             R.id.Yellow_Button -> {
-
                 userQueue.add(R.id.Yellow_Button)
-                compareQueue()
-                gameStatus()
             }
-
             R.id.Purple_Button -> {
-
                 userQueue.add(R.id.Purple_Button)
-                compareQueue()
-                gameStatus()
             }
-
             R.id.Blue_Button -> {
                 userQueue.add(R.id.Blue_Button)
-                compareQueue()
-                gameStatus()
             }
-
             R.id.Back_Button -> {
                 val intent = Intent(this@GamePageActivity, MainActivity::class.java)
                 startActivity(intent)
+            }
+            R.id.Done_Button -> {
+                compareQueue()
+                gameStatus()
             }
         }
     }
 
     private fun gameStatus() {  // win or lose message status
 
-        if (compareQueue()) {
+        val result = compareQueue()
+
+        if (result) {
             Toast.makeText(this@GamePageActivity, "NICE!", Toast.LENGTH_SHORT).show()
         }
-        if (!compareQueue()) {
+        else {
             Toast.makeText(this@GamePageActivity, "TRY AGAIN!", Toast.LENGTH_SHORT).show()
         }
     }
 
     private fun compareQueue(): Boolean {
 
-        return if (userQueue == gameQueue) {
-            gameRound++
-            addNewToGameQueue()
-            repeatPattern()
-            true
-        } else {
-            newGame()
-            false
+        val queueResult = gameQueue == userQueue
+
+        when {
+            queueResult -> {
+                gameRound++
+                addNewToGameQueue()
+                repeatPattern()
+                return true
+            }
+            else -> {
+                return false
+            }
         }
     }
 
@@ -124,36 +120,34 @@ class GamePageActivity : Activity() {
 
     private fun repeatPattern() {
 
-        for (button in gameQueue) {
+        for ((index, button) in gameQueue.withIndex())  {
 
-            buttonFlash(button) // flash each button in records
+                timer.postDelayed({
+                    buttonFlash(button)
+                }, (index * 1100).toLong())  // stop button flash happening at the same time
         }
-        addNewToGameQueue() // add new button after repeat
     }
 
     private fun buttonFlash(buttonId: Int) {
+        val button = findViewById<Button>(buttonId)
 
-        val accessButton = findViewById<Button>(buttonId)
-        handlerMap[buttonId]?.let { timer.removeCallbacks(it) }
-        val originalTintList = accessButton.backgroundTintList
-
-        val flashColor = ColorStateList.valueOf(
-            when (buttonId) {
-                R.id.Red_Button -> Color.RED
-                R.id.Yellow_Button -> Color.YELLOW
-                R.id.Purple_Button -> Color.MAGENTA
-                R.id.Blue_Button -> Color.BLUE
-                else -> return
-            }
-        )
-
-        accessButton.backgroundTintList = flashColor
-
-        val restoreRunnable = Runnable {
-            accessButton.backgroundTintList = originalTintList
+        // Assigning button color to color of flash
+        val flashColor = when (buttonId) {
+            R.id.Red_Button -> Color.RED
+            R.id.Yellow_Button -> Color.YELLOW
+            R.id.Purple_Button -> Color.MAGENTA
+            R.id.Blue_Button -> Color.BLUE
+            else -> {return}
         }
 
-        handlerMap[buttonId] = restoreRunnable
-        timer.postDelayed(restoreRunnable, 1000)
+        val originalColor = button.backgroundTintList        // Save the original button color
+
+        button.backgroundTintList = ColorStateList.valueOf(flashColor)         // Flash the button color
+
+        val restoreColor = Runnable {
+            button.backgroundTintList = originalColor // restore the original button color
+        }
+
+        timer.postDelayed(restoreColor, 1000) // 1000 = 1 second
     }
 }

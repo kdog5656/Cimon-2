@@ -9,4 +9,6 @@
     <string name="Y" />
     <string name="R" />
     <string name="bac"><![CDATA[<-]]></string>
+    <string name="play">PLAY!</string>
+    <string name="plays">PLAY</string>
 </resources>

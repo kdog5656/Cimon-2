@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/homecimon">
+    android:background="@drawable/homecimon" >
 
 
     <Button
@@ -15,8 +15,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:background="@color/white"
-        android:text="@string/R"
+        android:background="@color/themeColorWhite"
         android:textColor="#039BE5"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -25,7 +24,8 @@
         app:layout_constraintHorizontal_bias="0.047"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
+        app:layout_constraintVertical_bias="0.023"
+        tools:ignore="SpeakableTextPresentCheck,TextSizeCheck" />
 
     <Button
         android:id="@+id/Yellow_Button"
@@ -35,8 +35,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:background="@color/white"
-        android:text="@string/Y"
+        android:background="@color/themeColorWhite"
         android:textColor="#039BE5"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -45,7 +44,8 @@
         app:layout_constraintHorizontal_bias="0.96"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.556" />
+        app:layout_constraintVertical_bias="0.556"
+        tools:ignore="SpeakableTextPresentCheck,TextSizeCheck" />
 
     <Button
         android:id="@+id/Purple_Button"
@@ -55,8 +55,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:background="@color/white"
-        android:text="@string/P"
+        android:background="@color/themeColorWhite"
         android:textColor="#039BE5"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -65,18 +64,18 @@
         app:layout_constraintHorizontal_bias="0.319"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.318" />
+        app:layout_constraintVertical_bias="0.318"
+        tools:ignore="SpeakableTextPresentCheck,TextSizeCheck" />
 
     <Button
-        android:id="@+id/Green_Button"
+        android:id="@+id/Done_Button"
         android:layout_width="106dp"
         android:layout_height="147dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:background="@color/white"
-        android:text="@string/G"
+        android:background="@color/themeColorWhite"
         android:textColor="#039BE5"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -85,7 +84,8 @@
         app:layout_constraintHorizontal_bias="0.966"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.968" />
+        app:layout_constraintVertical_bias="0.968"
+        tools:ignore="SpeakableTextPresentCheck,TextSizeCheck" />
 
     <Button
         android:id="@+id/Blue_Button"
@@ -95,8 +95,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:background="@color/white"
-        android:text="@string/B"
+        android:background="@color/themeColorWhite"
         android:textColor="#039BE5"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -105,13 +104,15 @@
         app:layout_constraintHorizontal_bias="0.055"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.799" />
+        app:layout_constraintVertical_bias="0.799"
+        tools:ignore="SpeakableTextPresentCheck,TextSizeCheck" />
+
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/Back_Button"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:background="@color/white"
+        android:background="@color/themeColorWhite"
         android:onClick="beginGame"
         android:textSize="50sp"
         android:text="@string/bac"

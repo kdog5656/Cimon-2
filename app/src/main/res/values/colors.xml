@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#00BCD4</color>
-    <color name="white">#FFFFFFFF</color>
-
+        <color name="themeColorWhite">#FFFFFF</color> <!-- Example color: White -->
+        <color name="colorPrimaryDark">#CCCCCC</color> <!-- Example color: Light Gray -->
+        <color name="colorAccent">#FF4081</color> <!-- Example color: Pink -->
 </resources>
