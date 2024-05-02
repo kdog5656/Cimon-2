@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         startButton.setOnClickListener { onClick(it) }
 }
 
-    private fun onClick(view: View) {
+    fun onClick(view: View) {
 
         val intent = when (view.id) {
 

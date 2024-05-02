@@ -7,12 +7,19 @@
     android:gravity="center"
     android:background="@drawable/homecimon">
 
-    <androidx.appcompat.widget.AppCompatButton
+<!--    <ImageView-->
+<!--        android:layout_width="480dp"-->
+<!--        android:layout_height="436dp"-->
+<!--        android:importantForAccessibility="no"-->
+<!--        tools:ignore="MissingConstraints"-->
+<!--        tools:layout_editor_absoluteX="4dp"-->
+<!--        tools:layout_editor_absoluteY="118dp" />-->
+
+    <Button
         android:id="@+id/About_Button"
+        android:background="@color/white"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:background="@drawable/circle"
-        android:backgroundTint="@color/white"
         android:onClick="onClick"
         android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -23,12 +30,13 @@
         app:layout_constraintVertical_bias="0.046"
         tools:ignore="SpeakableTextPresentCheck" />
 
-    <androidx.appcompat.widget.AppCompatButton
+    <Button
         android:id="@+id/Profile_Button"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:background="@drawable/circle"
-        android:backgroundTint="@color/white"
+        android:background="@color/white"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
         android:onClick="onClick"
         android:text="@string/p"
         android:textSize="50sp"
@@ -42,19 +50,19 @@
 
     <Button
         android:id="@+id/Start_Button"
-        android:layout_width="240dp"
-        android:layout_height="75dp"
-        android:backgroundTint="@color/white"
+        android:layout_width="284dp"
+        android:layout_height="73dp"
+        android:background="@color/white"
         android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
         android:onClick="onClick"
         android:text="@string/start"
         android:textColor="#000"
-        android:textSize="30sp"
+        android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.846" />
+        app:layout_constraintVertical_bias="0.841" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
