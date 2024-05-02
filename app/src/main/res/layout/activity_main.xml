@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,104 +7,62 @@
     android:gravity="center"
     android:background="@drawable/homecimon">
 
-    <ImageView
-        android:id="@+id/circle0"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:background="@drawable/circle"
-        android:elevation="2dp"
-        app:layout_constraintBottom_toBottomOf="@id/About_Button"
-        app:layout_constraintEnd_toEndOf="@id/About_Button"
-        app:layout_constraintStart_toStartOf="@id/About_Button"
-        app:layout_constraintTop_toTopOf="@id/About_Button"
-        tools:ignore="SpeakableTextPresentCheck"
-        android:contentDescription="@string/About"/>
+<!--    <ImageView-->
+<!--        android:layout_width="480dp"-->
+<!--        android:layout_height="436dp"-->
+<!--        android:importantForAccessibility="no"-->
+<!--        tools:ignore="MissingConstraints"-->
+<!--        tools:layout_editor_absoluteX="4dp"-->
+<!--        tools:layout_editor_absoluteY="118dp" />-->
 
-    <androidx.appcompat.widget.AppCompatButton
+    <Button
         android:id="@+id/About_Button"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:background="@drawable/question_mark"
+        android:background="@color/white"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:onClick="onClick"
+        android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintHorizontal_bias="0.098"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.139"
+        app:layout_constraintVertical_bias="0.046"
         tools:ignore="SpeakableTextPresentCheck" />
 
-    <ImageView
-        android:id="@+id/circle1"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:background="@drawable/circle"
-        android:elevation="2dp"
-        app:layout_constraintBottom_toBottomOf="@id/Profile_Button"
-        app:layout_constraintEnd_toEndOf="@id/Profile_Button"
-        app:layout_constraintStart_toStartOf="@id/Profile_Button"
-        app:layout_constraintTop_toTopOf="@id/Profile_Button"
-        tools:ignore="SpeakableTextPresentCheck"
-        android:contentDescription="@string/Profile"/>
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/Leaderboard_Button"
-        android:layout_width="185dp"
-        android:layout_height="50dp"
-        android:background="@drawable/btn_bg"
-        android:text="@string/leaderboard"
-        android:textColor="#FFFF"
-        android:textSize="23sp"
-        android:onClick="Click"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.738"
-        tools:ignore="TextSizeCheck" />
-
-    <androidx.appcompat.widget.AppCompatButton
+    <Button
         android:id="@+id/Profile_Button"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:background="@drawable/profile_image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@color/white"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
         android:onClick="onClick"
+        android:text="@string/p"
+        android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintHorizontal_bias="0.925"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.139"
+        app:layout_constraintVertical_bias="0.045"
         tools:ignore="SpeakableTextPresentCheck" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/Settings_Button"
-        android:layout_width="185dp"
-        android:layout_height="50dp"
-        android:background="@drawable/btn_bg"
-        android:text="@string/settings"
-        android:textColor="#FFFF"
-        android:textSize="23sp"
-        android:onClick="Click"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.845" />
-
-    <androidx.appcompat.widget.AppCompatButton
+    <Button
         android:id="@+id/Start_Button"
-        android:layout_width="185dp"
-        android:layout_height="50dp"
-        android:background="@drawable/btn_bg"
+        android:layout_width="284dp"
+        android:layout_height="73dp"
+        android:background="@color/white"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:onClick="onClick"
         android:text="@string/start"
-        android:textColor="#FFFF"
-        android:textSize="23sp"
-        android:onClick="Click"
+        android:textColor="#000"
+        android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.64" />
+        app:layout_constraintVertical_bias="0.841" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
