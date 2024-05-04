@@ -5,6 +5,10 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 
+//Learned how to do this from Coding Zest Youtube vid
+//the YT has links in desc. for written steps and examples
+//https://www.youtube.com/watch?v=miJooBq9iwE
+
 class SignInPage : AppCompatActivity() {
 
     private lateinit var btnInsertData: Button
@@ -20,7 +24,7 @@ class SignInPage : AppCompatActivity() {
         btnFetchData = findViewById(R.id.btnFetchData)
 
         btnInsertData.setOnClickListener {
-            val intent = Intent(this, InsertionActivity::class.java)
+            val intent = Intent(this, SignUp::class.java)
             startActivity(intent)
         }
 
