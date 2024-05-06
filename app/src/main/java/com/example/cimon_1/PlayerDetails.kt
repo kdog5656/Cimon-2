@@ -14,11 +14,16 @@ private lateinit var btnDelete: Button
 
 class PlayerDetails {
     fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+        onCreate(savedInstanceState)
         setContentView(R.layout.activity_player_details)
 
     initView()
     setValuesToViews()
+    btnUpdate.setOnClickListener{
+        openUpdateDialog(
+            intent.getStringExtra("pId").toString,
+            intent.getStringExtra("pName").toString()
+        )
 
 }
 
