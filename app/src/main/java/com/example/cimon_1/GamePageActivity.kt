@@ -56,7 +56,7 @@ class GamePageActivity : Activity() {
         repeatPattern()             // flash pattern
     }
 
-    fun beginGame(button: View) {
+    private fun beginGame(button: View) {
 
         when (button.id) {
 
@@ -78,24 +78,20 @@ class GamePageActivity : Activity() {
                 startActivity(intent)
             }
             R.id.Done_Button -> {
-
-                if(compareQueue()){
-                gameStatus()
-                gameRound++
-                addNewToGameQueue()
-                repeatPattern()
-                }
-                else{
-                gameStatus()
-                newGame()
+                val result = compareQueue()
+                gameStatus(result)
+                if (result) {
+                    gameRound++
+                    addNewToGameQueue()
+                    repeatPattern()
+                } else {
+                    newGame()
                 }
             }
         }
     }
 
-    private fun gameStatus() {  // win or lose message status
-
-        val result = compareQueue()
+    private fun gameStatus(result: Boolean) {  // win or lose message status
 
         if (result) {
             Toast.makeText(this@GamePageActivity, "NICE!", Toast.LENGTH_SHORT).show()
@@ -144,6 +140,6 @@ class GamePageActivity : Activity() {
         timer.postDelayed({
             // Restore the original button color
             button.backgroundTintList = originalColor
-        }, 1000)  // Delay for 1000 ms (1 second)
+        }, 1000)
     }
 }
